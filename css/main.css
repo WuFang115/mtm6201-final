@@ -1,0 +1,1045 @@
+:root {
+    --brand-color: #8C5E3D;
+    --brand-dark: #3E3E3E;
+    --brand-light: #F5EDE5;
+    --font-heading: 'Fredoka', sans-serif;
+    --font-body: 'Fredoka', sans-serif;
+  }
+  
+  /* Basic Settings */
+  body {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--brand-dark);
+    background-color: #F5EDE5;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*       Logo       */
+  .navbar-brand img {
+    max-width: 160px;
+    height: auto;
+  }
+
+
+/* -----------------------------
+      Home Page
+------------------------------*/     
+
+  /*   Navigation       */
+  .nav-link {
+    margin: 0 14px; 
+  }
+
+  .navbar-nav .nav-link {
+    color: #3E3E3E; 
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.4s ease ease-out;
+  }
+
+  .navbar-nav .nav-link:hover {   /*  hover  */
+    background-color: #8C5E3D; 
+    color: #FDF6EE;
+    border-radius: 20px;   
+  }
+
+  .navbar-nav .nav-link:active {  /*  active  */
+    background-color: #5c3b23; 
+    color: #FDF6EE;
+    border-radius: 20px;
+  }
+
+  /* Title setting */
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph text */
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+   /* ----------- Introduction ---------- */
+  .intro-paragraph {
+    text-align: left;
+    max-width: 900px; 
+    padding-right: 1rem; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  /* ------------- Hero Banner ------------- */
+  .hero-banner {
+    background-color: #FDF6EE;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+    border-radius: 0;
+  }
+
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 233, 230, 0.5);
+    z-index: 1;
+  }
+
+  .hero-text {
+    font-family: "Fredoka", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3E3E3E;
+    text-align: center;
+    padding: 0 1rem;
+    z-index: 2;
+  }
+
+  /* ---- Bold only for titles ---- */
+  .hero-title {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  /* ----- Keep the paragraph at normal weight ------- */
+  .hero-text p {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  /* ---------- Custom Brown Button -------------- */
+  .btn-brown {
+    background-color: #8C5E3D;
+    border: 4px solid #8C5E3D;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-brown:hover,
+  .btn-brown:focus {
+    background-color: #FDF6EE;
+    border-color: #FDF6EE;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* --------- Button Style ------------- */
+  .btn {
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-dark:hover {
+    background-color: #888585;
+    border-color: #888585;
+  }
+  
+  /* --------- Icon hover Effect ---------- */
+  i.fa-brands {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  a:hover i.fa-brands {
+    color: var(--brand-color);
+    transform: scale(1.1);
+  }
+  
+  /* --- Image rounded corners and shadows --- */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  /* ------------ Adopt Section --------------- */
+  .adopt-section {
+    background-color: #F5EDE5;
+    margin-bottom: 0; 
+    margin-top: 0;
+  }
+  
+  .adopt-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .adopt-section .image-content {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+
+  .adopt-img {
+    width: 100%;
+    max-width: 834px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: auto;
+  }
+
+ /* ---------- About Section -------------- */
+  .about-img {
+    margin-top: -100px; 
+  }  
+
+  .about-text {
+    padding-top: 3rem;  
+  }
+
+/* ----------- News Section ------------ */
+
+  .news-img-upshift {
+    margin-top: -100px; 
+  }
+
+/* ------------- Quote -------------- */
+  .quote-section {
+    padding-bottom: 2rem;
+  }
+
+  .quote-section .rounded-circle {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .quote-dot {
+    background-color: #8C5E3D; 
+  }
+
+  
+  /* ------------ Footer ------------ */
+ .bg-brown {
+    background-color: #8C5E3D;
+  }
+
+  .footer {
+    background-color: var(--brand-color);
+    color: white;
+  }
+
+  /* Logo size in footer */
+  .footer-logo {
+    max-width: 180px;
+    height: auto;
+  }
+  
+  footer h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  footer a {
+    color: #FDF6EE;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  footer a:hover .fa-brands {
+    color: #FDF6EE; 
+  }
+
+  /* Social icons spacing */
+  .social-icon {
+    font-size: 1.5rem;
+    color: #FDF6EE;
+  }
+
+  /* -------- Subscrib ---------  */
+  .subscribe-form {
+    max-width: 420px;   
+    margin: -1 auto;     
+  }
+
+  .subscribe-form .form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #FDF6EE;
+    padding: 0.5rem 0;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .subscribe-form .form-input::placeholder {
+    color: #FDF6EE;
+    opacity: 0.8;
+  }
+  
+  .subscribe-form .form-input:focus {
+    outline: none;
+    border-bottom-color: #ffffff;
+  }
+  
+  /* Subscribe button style (radius and color) */
+  .subscribe-btn {
+    background-color: #3E3E3E;
+    color: #FDF6EE;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 2rem;
+  }
+  
+  .subscribe-btn:hover,
+  .subscribe-btn:active {
+    background-color: #6e6e6e;
+    color: #262525;
+  }
+  
+ /* Control column width not to be too long */
+  .subscribe-form .d-flex > .form-input {
+    width: 48%;
+  }
+
+/* ---------------------------------------------
+     Adopt Page
+  -----------------------------------------------*/
+  body.adopt-page {
+    background-color: #F5EDE5;
+  }
+  
+  html,body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5EDE5;
+    color: #3e3e3e;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .hero-section {
+    background-color: #F5EDE5;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 1.1rem;
+  }
+  
+
+ /* --------nav--------- */ 
+  .navbar {
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    color: #3e3e3e;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .navbar a.active {
+    border-bottom: 2px solid #3e3e3e;
+  }
+
+  .custom-navbar {
+    position: relative;
+  }
+  
+  .custom-navbar > *:last-child {
+    margin-right: 0;
+  }
+
+  .navbar input {
+    display: none !important;
+  }
+
+/* --------Pet Gallery--------- */
+  .pet-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .pet-card {
+    position: relative;
+    width: 220px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0;            
+    flex-shrink: 0;  
+  }
+  
+  .pet-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pet-card.pepper img {
+    object-position: -70px;
+  }
+  
+  .detail-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #D9D9D9;
+    color: #3e3e3e !important;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 12px; 
+    z-index: 3;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .pet-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    transition: bottom 0.3s ease;
+  }
+  
+  .pet-card:hover .pet-info,
+  .pet-card .badge:hover + .pet-info {
+    bottom: 0;
+  }
+
+/* -------  Adoption Journey ------------  */
+  .adoption-journey {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #F5EDE5; 
+  }
+
+  .maya-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: -20px center; 
+  }
+
+ /* -------  Search Bar ------------  */
+ .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .search-input {
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    background-color: #e0d6c9;
+    color: #3e3e3e;
+    width: 250px;
+  }
+  
+  .search-input::placeholder {
+    color: #6b6b6b;
+  }
+  
+  .search-button {
+    background-color: #3e3e3e;
+    color: #fdf6ee;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #5c5c5c;
+  }
+
+/* ------ Adoption Steps Section ------ */
+  .adoption-steps {
+    background-color: #fdf6ee;
+  }
+  
+  .step-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  
+  .step {
+    text-align: left;
+  }
+  
+  .step img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+  }
+  
+  .step h5 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: #3e3e3e;
+  }
+  
+  .step p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.95rem;
+    color: #3e3e3e;
+  }
+
+  /* ---------------------------------------------
+     About Page
+  -----------------------------------------------*/
+  body.about-page {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    background-color: #F5EDE5;
+    color: #3e3e3e;
+  }
+
+  .container {
+    background-color: #F5EDE5 transparent;
+  }
+
+  
+  /* Hero section */
+  .about-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    background: url('../images/about_banner.png') no-repeat center center / cover;
+    background-size: cover;
+    border-radius: 0;
+  }
+  
+  /* ------NAVIGATION------- */
+
+  .about-hero .logo {
+    height: 45px;
+  }
+  
+  .about-hero .nav-link {
+    margin: 0 5.5px;
+    color: #3E3E3E;
+    transition: all 0.4s ease-out;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #8C5E3D;
+    color: #FDF6EE;
+  }
+  
+  
+   /* Hero text bottom-left corner */
+   .about-hero .hero-text {
+    position: absolute;
+    bottom: 60rem;
+    left: 22rem;
+    color: #fff;
+  }
+
+  
+  .about-hero .hero-text h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 5rem;         
+    font-weight: bold;
+    color: #FDF6EE;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .text-brown {
+  color: #8C5E3D;
+}
+
+/* --------- Willow Story Section --------- */
+.story-section {
+    background-color: #F5EDE5;
+    color: #3e3e3e;
+
+  }
+  
+  .story-video {
+    position: relative;
+    width: 100%;
+    max-width: 1196px;
+    height: 376px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .video-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(65%);
+    }   
+  
+  .story-overlay-text {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    z-index: 2;
+    line-height: 1.4;
+    font-family: 'Roboto Serif', serif !important;
+  }
+
+/* ----- Play Button ------*/
+  .custom-play-button {
+    position: absolute;
+    right: 0rem;
+    bottom: -1rem;
+    width: 83px;
+    height: 83px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .play-icon-inner {
+    width: 0;
+    height: 0;
+    border-left: 20px solid #8C5E3D; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+  }
+
+
+  
+  /* ----- Story text paragraph ------ */
+  .story-paragraph {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .picture-section {
+    background-color: #E8D8D8;  
+    padding: 2rem 1rem;
+  }
+  
+  .picture-section h2 {
+    color: #3E3E3E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
+  
+  .picture-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 1rem 2rem;
+    scroll-behavior: smooth;
+  }
+  
+  .picture-scroll::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .picture-card {
+    flex: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .picture-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .picture-section {
+    margin-bottom: 80px;  
+  }
+  
+  .picture-card:nth-child(1) { width: 339px; height: 358px; }
+  .picture-card:nth-child(2) { width: 373px; height: 431px; }
+  .picture-card:nth-child(3),
+  .picture-card:nth-child(4) { width: 322.68px; height: 340.39px; }
+  .picture-card:nth-child(5),
+  .picture-card:nth-child(6) { width: 370px; height: 408px; }
+  
+ 
+  .picture-card:hover {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  
+
+  .view-more-wrapper {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 3rem; 
+  }
+  
+  .view-more-text {
+    font-family: 'Roboto Serif', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8C5E3D;
+  }
+  
+  .view-more-arrow {
+    font-size: 16px;
+    color: #8C5E3D;
+    border: 2px solid #8C5E3D;
+    border-radius: 50%;
+    padding: 6px;
+  }
+  
+/* ------------------------
+Contact Form Section  
+--------------------------- */
+.contact-page .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-page .navbar-nav .nav-link:hover {
+    background-color: #FDF6EE;
+    color: #8C5E3D; 
+  }
+
+.contact-input {
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .contact-input:focus {
+    border-color: var(--brand-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(140, 94, 61, 0.25);
+  }
+  
+.send-button {
+  background-color: #a86e45;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: var(--font-heading);
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 25px;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  color: #fff;
+  background-color: #764f31;
+}
+
+.send-button:active {
+  color: #fff !important;
+  background-color: #553b2a  !important;
+  transform: scale(0.98);
+}
+
+  
+  /* ------ Contact Info Section -------- */
+  .contact-info h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--brand-dark);
+    margin-bottom: 0.25rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ---------------------------------------------
+     Cover Bootstrap's built-in white background area 
+  -----------------------------------------------*/
+  .bg-light {
+    background-color: #F5EDE5 !important;
+  }
+  
+  .bg-white {
+    background-color: #F5EDE5 !important;
+  }
+  
+  section {
+    background-color: #F5EDE5  !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea {
+    font-family: 'Fredoka', sans-serif !important;
+  }
+    
+
+
+  /* ------------ Ipad ------------- */
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .homepage .navbar-collapse {
+        background-color: #F5EDE5;
+        padding: 2rem 0;
+    }
+
+    .d-md-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+    
+      .adopt-text,
+      .about-text,
+      .news-text {
+        order: 2;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    
+      .adopt-img,
+      .about-img,
+      .news-img-upshift {
+        order: 1;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 1rem;
+      }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 1rem 0;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #3E3E3E !important; 
+    }
+
+    
+    .contact-page .send-button {
+      width: auto;
+    }
+  
+    .contact-page .contact-info {
+      margin-top: 2rem;
+    }
+}
+
+  /* ------------ Iphone ------------- */
+@media (max-width: 767.98px) {
+
+  .container.d-md-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+    
+  .container.d-md-flex .col-md-6 {
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: inherit;
+  }
+    
+
+  .adopt-text {
+    order: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .adopt-img {
+    order: 2;
+  }
+
+
+  .about-text {
+    order: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-img {
+    order: 2;
+  }
+
+  .news-section .d-md-flex {
+    flex-direction: column !important;
+  }
+
+  .news-section .col-md-6:first-child {
+    order: 1;
+  }
+
+  .news-section .col-md-6:last-child {
+    order: 2;
+    margin-top: 1.5rem;
+  }
+
+
+  .story-paragraph {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  h5.text-center.fw-bold.mb-4 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  hr.w-25.mx-auto.mb-5 {
+    width: 60% !important;
+  }
+
+    .contact-page .contact-info {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .footer-container .col-md-4,
+    .footer-container .col-md-2 {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .footer-container .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-container .row > div {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  
+    .footer-container .d-flex.gap-3 {
+      justify-content: flex-start;
+    }
+  
+    .subscribe-form .d-flex.gap-3 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .subscribe-form .form-input {
+      width: 100% !important;
+    }
+  
+    .subscribe-btn {
+      width: auto;
+    }
+  }
+  
+
+
