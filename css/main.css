@@ -36,7 +36,7 @@
     color: #3E3E3E; 
     padding: 8px 16px;
     border-radius: 20px;
-    transition: all 0.4s ease ease-out;
+    transition: all 0.4s ease-out;
   }
 
   .navbar-nav .nav-link:hover {   /*  hover  */
@@ -242,13 +242,8 @@
 
   
   /* ------------ Footer ------------ */
- .bg-brown {
-    background-color: #8C5E3D;
-  }
-
-  .footer {
-    background-color: var(--brand-color);
-    color: white;
+ .footer {
+    background-color: #8C5E3D !important;
   }
 
   /* Logo size in footer */
@@ -286,7 +281,7 @@
   /* -------- Subscrib ---------  */
   .subscribe-form {
     max-width: 420px;   
-    margin: -1 auto;     
+    margin: -1rem auto;     
   }
 
   .subscribe-form .form-input {
@@ -561,7 +556,7 @@
   }
 
   .container {
-    background-color: #F5EDE5 transparent;
+    background-color: #F5EDE5;
   }
 
   
@@ -847,6 +842,10 @@ Contact Form Section
     margin-bottom: 1.5rem;
   }
 
+  .bg-brown {
+    background-color: #8C5E3D !important;
+  }
+
   /* ---------------------------------------------
      Cover Bootstrap's built-in white background area 
   -----------------------------------------------*/
@@ -866,7 +865,6 @@ Contact Form Section
     font-family: 'Fredoka', sans-serif !important;
   }
     
-
 
   /* ------------ Ipad ------------- */
 
@@ -942,13 +940,13 @@ Contact Form Section
   }
     
 
-  .adopt-text {
-    order: 1;
-    margin-bottom: 1.5rem;
-  }
-
   .adopt-img {
+    order: 1;
+  }
+  
+  .adopt-text {
     order: 2;
+    margin-top: 1.5rem;
   }
 
 
@@ -958,7 +956,7 @@ Contact Form Section
   }
 
   .about-img {
-    order: 2;
+    order: 1;
   }
 
   .news-section .d-md-flex {
